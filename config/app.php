@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //tambahan
+        Barryvdh\DomPDF\ServiceProvider::class,
+
     ],
 
     /*
@@ -228,17 +231,20 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        //tambahan
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+
     ],
 
-    'providers' => [
-        // ....
-        Barryvdh\DomPDF\ServiceProvider::class,
-        ],
+    // 'providers' => [
+    //     // ....
+    //     Barryvdh\DomPDF\ServiceProvider::class,
+    //     ],
          
-    'aliases' => [
-        // ....
-        'PDF' => Barryvdh\DomPDF\Facade::class,
-        ]
+    // 'aliases' => [
+    //     // ....
+    //     'PDF' => Barryvdh\DomPDF\Facade::class,
+    //     ]
         
 
 ];
